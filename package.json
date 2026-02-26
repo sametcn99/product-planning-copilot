@@ -1,0 +1,13 @@
+{
+  "name": "project-planning-copilot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Documentation-first repository for project planning and PRD artifacts",
+  "scripts": {
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check . --ignore-unknown"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}

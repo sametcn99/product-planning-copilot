@@ -1,0 +1,12 @@
+{
+  "name": "prd-validation",
+  "description": "Run lightweight checks after edits in src/ planning docs.",
+  "hooks": [
+    {
+      "event": "PostToolUse",
+      "tools": ["editFiles"],
+      "includePaths": ["src/**/*.md"],
+      "command": "node .github/hooks/scripts/validate-prd.mjs"
+    }
+  ]
+}
