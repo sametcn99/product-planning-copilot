@@ -1,0 +1,102 @@
+:root {
+  --site-bg: #020617;
+  --site-panel: rgba(15, 23, 42, 0.78);
+  --site-panel-strong: rgba(15, 23, 42, 0.92);
+  --site-border: rgba(148, 163, 184, 0.18);
+  --site-accent: #38bdf8;
+  --site-accent-strong: #0ea5e9;
+  --site-text: #e2e8f0;
+  --site-muted: #94a3b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--site-text);
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 24%),
+    linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.hero-header {
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.84), rgba(2, 6, 23, 0.35));
+  backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--site-accent);
+  font-size: 0.8rem;
+}
+
+.hero-panel,
+.content-panel {
+  background: var(--site-panel);
+  border: 1px solid var(--site-border);
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.35);
+  backdrop-filter: blur(16px);
+}
+
+.hero-panel {
+  background: var(--site-panel-strong);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--site-accent-strong);
+  --bs-btn-border-color: var(--site-accent-strong);
+  --bs-btn-hover-bg: #0284c7;
+  --bs-btn-hover-border-color: #0284c7;
+  --bs-btn-active-bg: #0369a1;
+  --bs-btn-active-border-color: #0369a1;
+}
+
+.content-panel h2,
+.content-panel h3,
+.content-panel h4 {
+  margin-top: 2rem;
+}
+
+.content-panel p,
+.content-panel li {
+  color: var(--site-text);
+}
+
+.content-panel a {
+  color: #7dd3fc;
+}
+
+.content-panel code,
+.content-panel pre {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: rgba(148, 163, 184, 0.16);
+}
+
+.content-panel pre {
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 1rem;
+}
+
+.content-panel table {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 2.4rem;
+  }
+
+  .content-panel {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,49 @@
+title: Product Planning Copilot
+description: Documentation-first repository for product planning and PRD artifacts.
+url: "https://sametcn99.github.io"
+baseurl: "/product-planning-copilot"
+lang: en
+locale: en_US
+timezone: Europe/Istanbul
+
+author:
+  name: Samet CN
+
+repository: sametcn99/product-planning-copilot
+
+image: /assets/images/social-card.svg
+logo: /assets/images/social-card.svg
+robots: index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1
+
+twitter:
+  card: summary_large_image
+
+social:
+  name: Product Planning Copilot
+  links:
+    - https://github.com/sametcn99/product-planning-copilot
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/social-card.svg
+      robots: index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1
+
+exclude:
+  - node_modules
+  - vendor
+  - bun.lock
+  - package.json
+  - .vscode
